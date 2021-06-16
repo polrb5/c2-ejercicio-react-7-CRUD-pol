@@ -4,11 +4,17 @@ import { List } from "./components/List";
 
 function App() {
   const [inputText, setInputText] = useState("");
+  const [friendsList, setFriendsList] = useState([]);
   return (
     <>
       <div className="container">
         <h1>Lista de amigos</h1>
-        <Form />
+        <Form
+          inputText={inputText}
+          setInputText={setInputText}
+          friendsList={friendsList}
+          setFriendsList={setFriendsList}
+        />
         <List />
       </div>
     </>

@@ -1,7 +1,7 @@
 export const List = () => {
   return (
     <div className="container-list">
-      <div className="list-elements"></div>
+      <ul className="list-elements"></ul>
     </div>
   );
 };
