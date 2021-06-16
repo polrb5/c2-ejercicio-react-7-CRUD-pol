@@ -15,7 +15,7 @@ function App() {
           friendsList={friendsList}
           setFriendsList={setFriendsList}
         />
-        <List />
+        <List friendsList={friendsList} setFriendsList={setFriendsList} />
       </div>
     </>
   );

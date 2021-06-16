@@ -13,8 +13,16 @@ body {
   text-align: center;
 }
 
+.container-list {
+  margin-top: 100px;
+}
+
 .boton {
   height: 30px;
   width: 30px;
   background-color: bisque;
 }
+
+/* .list-elements {
+  width: 300px;
+} */

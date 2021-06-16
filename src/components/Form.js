@@ -5,9 +5,12 @@ export const Form = (props) => {
   };
   const toggleSubmit = (e) => {
     e.preventDefault();
+    if (inputText.length === 0) {
+      return;
+    }
     setFriendsList([
       ...friendsList,
-      { text: inputText, completed: false, id: Math.random() * 1000 },
+      { text: inputText, id: Math.random() * 1000 },
     ]);
     clearText();
   };
