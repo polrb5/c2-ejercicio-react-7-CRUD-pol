@@ -4,7 +4,20 @@ import { List } from "./components/List";
 
 function App() {
   const [inputText, setInputText] = useState("");
-  const [friendsList, setFriendsList] = useState([]);
+  const [friendsList, setFriendsList] = useState([
+    {
+      text: "Luis",
+      id: 1,
+    },
+    {
+      text: "Josefina",
+      id: 2,
+    },
+    {
+      text: "David",
+      id: 3,
+    },
+  ]);
   return (
     <>
       <div className="container">
